@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakshya Verma | AI & Data Science Portfolio</title>
+  <meta name="description" content="Portfolio of Lakshya Verma — Computer Science Undergraduate majoring in Artificial Intelligence & Data Science. Explore projects, skills, and achievements." />
+  <meta name="keywords" content="Lakshya Verma, AI, Data Science, Portfolio, Web Development, Computer Science" />
+  <meta name="author" content="Lakshya Verma" />
+
+  <!-- Preconnect to external assets to optimize loading speeds -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+
+  <!-- Fonts: Space Grotesk (headings) + Archivo (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Phosphor Icons (Deferred for non-blocking page load) -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Critical inline script to initialize theme and prevent Flash of Unstyled Content (FOUC) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', initialTheme);
+    })();
+  </script>
+</head>
+<body>
+
+
+
+  <!-- Ambient Animated Background Blobs -->
+  <div class="bg-blobs-container">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">L<span class="accent">V</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li>
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="ph-bold ph-sun theme-icon-sun"></i>
+          <i class="ph-bold ph-moon theme-icon-moon"></i>
+        </button>
+      </li>
+      <li><a href="#contact" class="nav-cta">Let's Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-title">Lakshya <span class="accent">Verma</span></h1>
+      <p class="hero-subtitle">Computer Science Undergraduate&ensp;|&ensp;AI &amp; Data Science Innovator</p>
+      <p class="hero-tagline" id="heroTagline"></p>
+      <div class="hero-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon"><i class="ph-bold ph-github-logo"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon"><i class="ph-bold ph-linkedin-logo"></i></a>
+      </div>
+      <div class="hero-actions">
+        <a href="#achievements" class="btn btn-primary">View Work <i class="ph ph-arrow-down"></i></a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About & Education -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About <span class="accent">&amp; Education</span></h2>
+      <div class="about-grid">
+        <!-- Left: Summary -->
+        <div class="about-summary reveal">
+          <div class="about-card glass-card">
+            <div class="about-icon"><i class="ph-bold ph-user-circle-gear"></i></div>
+            <h3>Who I Am</h3>
+            <p>I'm a driven Computer Science undergraduate with a deep passion for Artificial Intelligence and Data Science. My work focuses on bridging cutting-edge web development with intelligent systems to create seamless, high-impact user experiences.</p>
+            <p>I thrive in environments requiring <strong>technical troubleshooting</strong>, <strong>risk evaluation</strong>, and <strong>innovative problem-solving</strong>. Whether it's building responsive platforms or analyzing complex datasets, I bring precision, creativity, and a growth-oriented mindset to every project.</p>
+          </div>
+        </div>
+        <!-- Right: Education Timeline -->
+        <div class="about-education reveal reveal-delay-1">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card glass-card">
+                <span class="timeline-date">Aug 2024 — Aug 2028</span>
+                <h4>Bachelor of Technology (B.Tech)</h4>
+                <p class="timeline-institution">Artificial Intelligence &amp; Data Science</p>
+                <p class="timeline-school"><i class="ph ph-buildings"></i> Global Institute of Technology, Jaipur</p>
+                <div class="coursework-tags">
+                  <span class="tag">Artificial Intelligence</span>
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Data Science</span>
+                  <span class="tag">Data Analysis</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">Web Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills <span class="accent">Matrix</span></h2>
+      <div class="skills-grid">
+        <!-- Technical Core -->
+        <div class="skill-group glass-card reveal">
+          <div class="skill-group-icon"><i class="ph-bold ph-code"></i></div>
+          <h3>Technical Core</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="ph ph-file-py"></i> Python</div>
+            <div class="skill-chip"><i class="ph ph-coffee"></i> Java</div>
+            <div class="skill-chip"><i class="ph ph-brackets-curly"></i> C / C++</div>
+            <div class="skill-chip"><i class="ph ph-file-html"></i> HTML</div>
+          </div>
+        </div>
+        <!-- Cloud & Design -->
+        <div class="skill-group glass-card reveal reveal-delay-1">
+          <div class="skill-group-icon"><i class="ph-bold ph-cloud"></i></div>
+          <h3>Cloud &amp; Design</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="ph ph-cloud-arrow-up"></i> AWS</div>
+            <div class="skill-chip"><i class="ph ph-figma-logo"></i> UI/UX</div>
+            <div class="skill-chip"><i class="ph ph-browser"></i> Web Design</div>
+          </div>
+        </div>
+        <!-- Core Engineering -->
+        <div class="skill-group glass-card reveal reveal-delay-2">
+          <div class="skill-group-icon"><i class="ph-bold ph-wrench"></i></div>
+          <h3>Core Engineering</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="ph ph-bug"></i> Troubleshooting</div>
+            <div class="skill-chip"><i class="ph ph-kanban"></i> Management</div>
+            <div class="skill-chip"><i class="ph ph-brain"></i> Critical Thinking</div>
+            <div class="skill-chip"><i class="ph ph-users-three"></i> Teamwork</div>
+            <div class="skill-chip"><i class="ph ph-chats-circle"></i> Communication</div>
+          </div>
+        </div>
+      </div>
+      <!-- Interests -->
+      <div class="interests reveal">
+        <h3 class="interests-title">Interests</h3>
+        <div class="interest-chips">
+          <span class="interest-chip"><i class="ph ph-camera"></i> Photography</span>
+          <span class="interest-chip"><i class="ph ph-video-camera"></i> Videography</span>
+          <span class="interest-chip"><i class="ph ph-film-strip"></i> Editing</span>
+          <span class="interest-chip"><i class="ph ph-game-controller"></i> Gaming</span>
+          <span class="interest-chip"><i class="ph ph-soccer-ball"></i> Football</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Professional <span class="accent">Experience</span></h2>
+      <div class="experience-cards">
+        <!-- Card 1 -->
+        <div class="exp-card glass-card reveal">
+          <div class="exp-header">
+            <div>
+              <h3>Web Development Executive</h3>
+              <p class="exp-company"><i class="ph ph-globe"></i> SevaPoint.in</p>
+            </div>
+            <span class="exp-date">Sep 2025 — Present</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Spearheaded user experience enhancements across the platform, delivering intuitive navigation and improved engagement metrics.</li>
+            <li>Managed end-to-end content updates and digital assets, ensuring brand consistency and freshness across all pages.</li>
+            <li>Maintained platform reliability through proactive bug fixes, performance monitoring, and cross-browser compatibility testing.</li>
+          </ul>
+        </div>
+        <!-- Card 2 -->
+        <div class="exp-card glass-card reveal reveal-delay-1">
+          <div class="exp-header">
+            <div>
+              <h3>Project Intern</h3>
+              <p class="exp-company"><i class="ph ph-briefcase"></i> My Job Grow Internship Program</p>
+            </div>
+            <span class="exp-date">Jul 2025 — Aug 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Performed hands-on data analysis using Python libraries (Pandas, NumPy, Matplotlib) to derive actionable insights from real-world datasets.</li>
+            <li>Built and evaluated Machine Learning models for predictive analytics, achieving measurable accuracy improvements.</li>
+            <li>Strengthened expertise in data handling, feature engineering, and statistical visualization workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section section-alt" id="achievements">
+    <div class="container">
+      <h2 class="section-title reveal">Achievements <span class="accent">&amp; Acclaim</span></h2>
+      <!-- Filter Tabs -->
+      <div class="ach-tabs reveal">
+        <button class="ach-tab active" data-filter="all">All</button>
+        <button class="ach-tab" data-filter="hackathon">Hackathons &amp; Technical</button>
+        <button class="ach-tab" data-filter="creative">Media, Design &amp; Esports</button>
+      </div>
+      <div class="ach-grid">
+        <!-- HACKATHONS -->
+        <div class="ach-card glass-card reveal" data-category="hackathon">
+          <div class="ach-badge trophy"><i class="ph-bold ph-trophy"></i></div>
+          <h4>Top 10 — CodeFiesta Hackathon 3.0</h4>
+          <p>GIT Jaipur</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="hackathon">
+          <div class="ach-badge team"><i class="ph-bold ph-users-four"></i></div>
+          <h4>Management Team — CodeFiesta 4.0</h4>
+          <p>GIT Jaipur</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="hackathon">
+          <div class="ach-badge national"><i class="ph-bold ph-flag-banner"></i></div>
+          <h4>National Competitor — Smart India Hackathon</h4>
+          <p>Top 15 GIT College, 2025</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="hackathon">
+          <div class="ach-badge national"><i class="ph-bold ph-rocket-launch"></i></div>
+          <h4>National Competitor — Bharatiya Antariksh Hackathon</h4>
+          <p>2025</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="hackathon">
+          <div class="ach-badge national"><i class="ph-bold ph-paint-brush"></i></div>
+          <h4>National Competitor — Adobe India Hackathon</h4>
+          <p>2025</p>
+        </div>
+        <!-- CREATIVE & ESPORTS -->
+        <div class="ach-card glass-card reveal" data-category="creative">
+          <div class="ach-badge gold"><i class="ph-bold ph-medal"></i></div>
+          <h4>1st Position — JIGYASA 2k25 Reel Contest</h4>
+          <p>Creative / Video</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="creative">
+          <div class="ach-badge gold"><i class="ph-bold ph-camera"></i></div>
+          <h4>1st Position — JIGYASA 2k26 Frame Off</h4>
+          <p>Photography</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="creative">
+          <div class="ach-badge champion"><i class="ph-bold ph-crown"></i></div>
+          <h4>Champion — Valorant Esports, SKIT 2026</h4>
+          <p>1st Place</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="creative">
+          <div class="ach-badge champion"><i class="ph-bold ph-crown"></i></div>
+          <h4>Champion — Valorant Esports, JECRC 2026</h4>
+          <p>1st Place</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="creative">
+          <div class="ach-badge champion"><i class="ph-bold ph-crown"></i></div>
+          <h4>Champion — Valorant Esports, JIGYASA 2k26</h4>
+          <p>1st Place</p>
+        </div>
+        <div class="ach-card glass-card reveal" data-category="creative">
+          <div class="ach-badge silver"><i class="ph-bold ph-medal"></i></div>
+          <h4>2nd Position — JIGYASA 2k25 Valorant</h4>
+          <p>Esports</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Get in <span class="accent">Touch</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item glass-card">
+            <i class="ph-bold ph-map-pin"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Jaipur, Rajasthan</p>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <i class="ph-bold ph-envelope-simple"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:lakshyaverma.hey@gmail.com">lakshyaverma.hey@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item glass-card">
+            <i class="ph-bold ph-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+918384023657">+91 8384023657</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass-card reveal reveal-delay-1" id="contactForm" action="https://splitforms.com/api/submit" method="POST">
+          <input type="hidden" name="access_key" value="162bfcddc4da4e6c83d9dc5b36424d22">
+          <input type="hidden" name="subject" value="New contact form submission">
+          
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          
+          <!-- honeypot — bots fill every field -->
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+          
+          <button type="submit" class="btn btn-primary btn-full">Send Message <i class="ph ph-paper-plane-tilt"></i></button>
+          
+          <p style="margin-top:16px;font-size:11px;color:var(--text-muted);text-align:right">
+            Powered by <a href="https://splitforms.com" style="color:var(--text-muted);text-decoration:none" target="_blank" rel="noopener">splitforms</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">L<span class="accent">V</span></p>
+        <div class="footer-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph-bold ph-github-logo"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph-bold ph-linkedin-logo"></i></a>
+          <a href="mailto:lakshyaverma.hey@gmail.com" aria-label="Email"><i class="ph-bold ph-envelope-simple"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Lakshya Verma. Crafted with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
